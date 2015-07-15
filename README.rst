@@ -1,9 +1,9 @@
-Muffin-Redis
+Muffin-Redis-Cache
 ############
 
 .. _description:
 
-Muffin-Redis -- Short description.
+Adds easy cache support with Redis to Muffin project.
 
 .. _badges:
 
@@ -39,14 +39,14 @@ with documentation enhancements and/or fixes are awesome and most welcome.**
 Requirements
 =============
 
-- python >= 2.6
+- python >= 3.4
 
 .. _installation:
 
 Installation
 =============
 
-**Muffin-Redis** should be installed using pip: ::
+**Muffin-Redis-Cache** should be installed using pip: ::
 
     pip install muffin-redis-cache
 
@@ -69,7 +69,7 @@ at https://github.com/klinkin/muffin-redis-cache/issues
 Contributing
 ============
 
-Development of Muffin-Redis happens at: https://github.com/klinkin/muffin-redis-cache
+Development of Muffin-Redis-Cache happens at: https://github.com/klinkin/muffin-redis-cache
 
 
 Contributors
