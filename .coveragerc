@@ -1,0 +1,5 @@
+[report]
+source=muffin_redis_cache
+
+[run]
+source=muffin_redis_cache
