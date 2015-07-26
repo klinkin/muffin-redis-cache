@@ -45,19 +45,6 @@ class Plugin(RedisPlugin):
         super().setup(app)
         self.options.default_expire = int(self.options.default_expire)
 
-    def user_pass(self, func=None, location=None, **rkwargs):
-        def wrapper(view):
-            view = to_coroutine(view)
-
-            @asyncio.coroutine
-            @functools.wraps(view)
-            def handler(request, *args, **kwargs):
-                yield from self.check_user(request, func, location, **rkwargs)
-                return (yield from view(request, *args, **kwargs))
-            return handler
-
-        return wrapper
-
     def cached(self, expire=None, key_prefix='view%s', unless=None):
 
         def decorator(view):
