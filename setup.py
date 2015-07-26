@@ -26,7 +26,7 @@ setup(
     description=_read('DESCRIPTION'),
     long_description=_read('README.rst'),
     platforms=('Any'),
-    keywords = "asyncio aiohttp muffin redis".split(), # noqa
+    keywords="asyncio aiohttp muffin redis".split(),  # noqa
 
     author='Kirill Klenov',
     author_email='horneds@gmail.com',

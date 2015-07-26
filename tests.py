@@ -54,6 +54,3 @@ def test_muffin_redis_cache(loop, app, client):
 
     result = loop.run_until_complete(exist_key_in_redis())
     assert jsonpickle.decode(result) == {'firstname': 'Mike', 'gender': 'male'}
-
-
-
