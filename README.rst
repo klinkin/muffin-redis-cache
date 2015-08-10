@@ -1,5 +1,5 @@
 Muffin-Redis-Cache
-############
+##################
 
 .. _description:
 

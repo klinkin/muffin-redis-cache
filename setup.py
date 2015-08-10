@@ -26,10 +26,10 @@ setup(
     description=_read('DESCRIPTION'),
     long_description=_read('README.rst'),
     platforms=('Any'),
-    keywords="asyncio aiohttp muffin redis".split(),  # noqa
+    keywords="asyncio aiohttp muffin redis cache".split(),  # noqa
 
-    author='Kirill Klenov',
-    author_email='horneds@gmail.com',
+    author='Mike Klimin',
+    author_email='klinkin@gmail.com',
     url='https://github.com/klinkin/muffin-redis-cache',
     classifiers=[
         'Development Status :: 4 - Beta',
