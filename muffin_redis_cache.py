@@ -12,7 +12,7 @@ from muffin.utils import to_coroutine
 
 from muffin_redis import Plugin as RedisPlugin
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 __project__ = "muffin-redis-cache"
 __author__ = "Mike Klimin <klinkin@gmail.com>"
 __license__ = "MIT"
@@ -27,7 +27,7 @@ class Plugin(RedisPlugin):
     defaults = {
         'db': 0,
         'fake': False,
-        'host': '127.0.1.0',
+        'host': '127.0.2.0',
         'password': None,
         'poolsize': 1,
         'port': 6379,
@@ -40,10 +40,12 @@ class Plugin(RedisPlugin):
         super().__init__(*args, **kwargs)
         self.conn = None
 
+
     def setup(self, app):
-        """ Setup self options. """
+        """ Setup self """
         super().setup(app)
-        self.options.default_expire = int(self.options.default_expire)
+        self.cfg.default_expire = int(self.cfg.default_expire)
+
 
     def cached(self, expire=None, key_prefix='view%s', unless=None):
 
