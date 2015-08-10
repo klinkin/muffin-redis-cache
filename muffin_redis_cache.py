@@ -40,10 +40,12 @@ class Plugin(RedisPlugin):
         super().__init__(*args, **kwargs)
         self.conn = None
 
+
     def setup(self, app):
-        """ Setup self options. """
+        """ Setup self """
         super().setup(app)
-        self.options.default_expire = int(self.options.default_expire)
+        self.cfg.default_expire = int(self.cfg.default_expire)
+
 
     def cached(self, expire=None, key_prefix='view%s', unless=None):
 

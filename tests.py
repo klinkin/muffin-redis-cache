@@ -2,7 +2,7 @@ import asyncio
 import jsonpickle
 import muffin
 import pytest
-
+import logging
 
 @pytest.fixture(scope='session')
 def app(loop):
@@ -10,10 +10,9 @@ def app(loop):
         'redis_cache', loop=loop,
 
         PLUGINS=[
-            'muffin_redis',
             'muffin_redis_cache'
         ],
-        REDIS_FAKE=True,
+        REDIS_FAKE=True
     )
 
     @app.register('/cached')
