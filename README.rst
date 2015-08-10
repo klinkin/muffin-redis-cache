@@ -46,8 +46,9 @@ Requirements
 Installation
 =============
 
-**Muffin-Redis-Cache** should be installed using pip: ::
+**Muffin-Redis-Cache** should be installed using pip:
 
+.. code-block:: python
     pip install muffin-redis-cache
 
 .. _usage:
