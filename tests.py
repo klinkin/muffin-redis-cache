@@ -4,6 +4,7 @@ import muffin
 import pytest
 import logging
 
+
 @pytest.fixture(scope='session')
 def app(loop):
     app = muffin.Application(
